@@ -1,0 +1,16 @@
+export enum ServerEvents {
+  exception = 'exception',
+  connectionResponse = 'connectionResponse',
+  createLobbyResponse = 'createLobbyResponse',
+  authenticationResponse = 'authenticationResponse',
+  lobbyNotification = 'lobbyNotification',
+  clientNotification = 'clientNotification',
+  lobbyStatus = 'lobbyStatus',
+  loadBoxResponse = 'loadBoxResponse',
+  startGameResponse = 'startGameResponse',
+  gameEvent = 'gameEvent',
+  menuStatusResponse = 'menuStatusResponse',
+  setLobbyAdminResponse = 'setLobbyAdminResponse',
+  endGameResponse = 'endGameResponse',
+  lobbyShutdown = 'lobbyShutdown',
+}

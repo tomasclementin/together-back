@@ -1,0 +1,24 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build the Docker image
+        run: docker build . --build-arg NODE_ENV=production --file ./Dockerfile --tag scalemote/together:${{ github.sha }}
+      - name: Login to ECR
+        id: ecr
+        uses: jwalton/gh-ecr-push@v1
+        with:
+          access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          local-image: scalemote/together:${{ github.sha }}
+          image: scalemote/together:${{ github.sha }}, scalemote/together:latest

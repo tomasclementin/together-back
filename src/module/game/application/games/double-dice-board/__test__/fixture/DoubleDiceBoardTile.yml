@@ -1,0 +1,112 @@
+entity: DoubleDiceBoardTile
+items:
+  doubleDiceBoardTile0:
+    text: 'tile text 1'
+
+  doubleDiceBoardTile1:
+    text: 'tile text 2'
+  
+  doubleDiceBoardTile2:
+    text: 'tile text 3'
+  
+  doubleDiceBoardTile3:
+    text: 'tile text 4'
+
+  doubleDiceBoardTile4:
+    text: 'tile text 5'
+
+  doubleDiceBoardTile5:
+    text: 'tile text 6'
+
+  doubleDiceBoardTile6:
+    text: 'tile text 7'
+
+  doubleDiceBoardTile7:
+    text: 'tile text 8'
+
+  doubleDiceBoardTile8:
+    text: 'tile text 9'
+
+  doubleDiceBoardTile9:
+    text: 'tile text 10'
+
+  doubleDiceBoardTile10:
+    text: 'tile text 11'
+
+  doubleDiceBoardTile11:
+    text: 'tile text 12'
+  
+  doubleDiceBoardTile12:
+    text: 'tile text 13'
+
+  doubleDiceBoardTile13:
+    text: 'tile text 14'
+
+  doubleDiceBoardTile14:
+    text: 'tile text 15'
+
+  doubleDiceBoardTile15:
+    text: 'tile text 16'
+
+  doubleDiceBoardTile16:
+    text: 'tile text 17'
+
+  doubleDiceBoardTile17:
+    text: 'tile text 18'
+
+  doubleDiceBoardTile18:
+    text: 'tile text 19'
+
+  doubleDiceBoardTile19:
+    text: 'tile text 20'
+
+  doubleDiceBoardTile20:
+    text: 'tile text 21'
+
+  doubleDiceBoardTile21:
+    text: 'tile text 22'
+
+  doubleDiceBoardTile22:
+    text: 'tile text 23'
+
+  doubleDiceBoardTile23:
+    text: 'tile text 24'
+
+  doubleDiceBoardTile24:
+    text: 'tile text 25'
+
+  doubleDiceBoardTile25:
+    text: 'tile text 26'
+
+  doubleDiceBoardTile26:
+    text: 'tile text 27'
+
+  doubleDiceBoardTile27:
+    text: 'tile text 28'
+
+  doubleDiceBoardTile28:
+    text: 'tile text 29'
+
+  doubleDiceBoardTile29:
+    text: 'tile text 30'
+
+  doubleDiceBoardTile30:
+    text: 'tile text 31'
+
+  doubleDiceBoardTile31:
+    text: 'tile text 32'
+  
+  doubleDiceBoardTile32:
+    text: 'tile text 33'
+  
+  doubleDiceBoardTile33:
+    text: 'tile text 34'
+
+  doubleDiceBoardTile34:
+    text: 'tile text 35'
+
+  doubleDiceBoardTile35:
+    text: 'tile text 36'
+
+
+

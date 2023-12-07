@@ -1,0 +1,17 @@
+entity: Box
+items:
+  box0:
+    maxPlayers: 6
+    title: 'Box test 1'
+    description: 'Box test 1 description'
+
+  box1:
+    maxPlayers: 6
+    title: 'Box test 2'
+    description: 'Box test 2 description'
+
+  box2:
+    maxPlayers: 6
+    title: 'Box test 3'
+    description: 'Box test 3 description'
+

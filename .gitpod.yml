@@ -1,0 +1,13 @@
+additionalRepositories:
+  - url: https://github.com/ScaleMote/together-ui
+    checkoutLocation: together-ui
+workspaceLocation: together-core-api/.code-workspace
+tasks:
+  - name: frontend
+    before: cd ../together-ui
+    init: npm ci
+    command: npm run dev
+
+  - name: backend
+    init: npm ci
+    command: npm run start:dev

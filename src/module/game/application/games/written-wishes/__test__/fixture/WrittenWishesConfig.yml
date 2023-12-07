@@ -1,0 +1,9 @@
+entity: WrittenWishesConfig
+items:
+  writtenWishesConfig0:
+    configType: 'WrittenWishesConfig'
+    gameName: 'Written wishes'
+    title: 'Written wishes test'
+    wishesAmount: 3
+    phase: '@phase0'
+    

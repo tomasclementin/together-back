@@ -1,0 +1,20 @@
+{
+  "Clients": {
+    "f57xus4aqxlted28t5jahujbc": {
+      "ClientId": "f57xus4aqxlted28t5jahujbc",
+      "ClientName": "client",
+      "CreationDate": "2023-01-16T03:16:04.172Z",
+      "ExplicitAuthFlows": [
+        "ALLOW_USER_PASSWORD_AUTH"
+      ],
+      "LastModifiedDate": "2023-01-16T03:16:04.172Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_7cSMGZ6h",
+      "AccessTokenValidity": 1
+    }
+  }
+}

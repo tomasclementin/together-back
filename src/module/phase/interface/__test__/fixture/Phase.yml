@@ -1,0 +1,16 @@
+entity: Phase
+items:
+  phase0:
+    order: 1
+    name: 'warm up'
+    box: '@box0'
+
+  phase1:
+    order: 1
+    name: 'warm up'
+    box: '@box1'
+
+  phase2:
+    order: 1
+    name: 'warm up'
+    box: '@box2'

@@ -1,0 +1,10 @@
+entity: User
+items:
+  user0:
+    externalId: 'external_id'
+    phoneNumber: '12345678'
+    email: 'test@email.com'
+    name: 'test'
+    lastName: 'test'
+    password: 'Passsword1.'
+

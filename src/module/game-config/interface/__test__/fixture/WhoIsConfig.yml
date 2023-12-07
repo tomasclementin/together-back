@@ -1,0 +1,11 @@
+entity: WhoIsConfig
+items:
+  whoIsConfig0:
+    box: '@box0'
+    configType: 'WhoIsConfig'
+    gameName: 'Who is'
+    title: 'Who is'
+    maxPlayers: 2
+    cards:
+      - '@whoIsCard0'
+      - '@whoIsCard1'

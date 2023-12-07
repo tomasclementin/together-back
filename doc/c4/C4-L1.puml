@@ -1,0 +1,19 @@
+@startuml C4_Elements
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(client, "User", "Authenticated user")
+Person_Ext(guest, "Guest User", "Guest invited by authenticated user")
+Person(admin, "Admin User", "Content creator")
+Container(webApp, "UI","Svelte, Typescript", "Frontend application, main client.")
+Container(adminWebApp, "Admin UI",'Svelte, Typescript', "Frontend application for generating content")
+Container(coreApi, "Core API",'Nest.js', "Handles bussines logic")
+System_Ext(aws, "AWS Cognito", "User authorization and authentication")
+Rel(client, webApp, "Invites people to play games")
+Rel(guest, webApp, "Plays games")
+Rel(admin, adminWebApp, "Creates games and boxes")
+Rel(webApp, coreApi, "Retrieves boxes and creates lobbies")
+Rel(adminWebApp, coreApi, "Retrieves/sends games and boxes data")
+Rel(coreApi, aws, "Authenticate users")
+ContainerDb_Ext(db,'Relational Database (AWS RDS)','MySql','Stores users and boxes related data')
+Rel(coreApi, db, "Retrieves/sends user, boxes and games data")
+@enduml

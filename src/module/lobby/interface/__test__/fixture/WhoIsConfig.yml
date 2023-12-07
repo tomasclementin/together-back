@@ -1,0 +1,10 @@
+entity: WhoIsConfig
+items:
+  whoIsConfig0:
+    configType: 'WhoIsConfig'
+    title: 'Who is'
+    gameName: 'Who is'
+    phase: '@phase0'
+    cards:
+      - '@whoIsCard0'
+      - '@whoIsCard1'

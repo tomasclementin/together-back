@@ -1,0 +1,70 @@
+@startuml
+
+entity User  {
+  + id (PK)
+  --
+  external_id: String
+  name: String
+  last_name: String
+  email: String
+  phone_number: Number
+}
+
+entity Box  {
+  + id (PK)
+  --
+  title: String
+  description: String
+  max_players: Number
+}
+entity Phase  {
+  + id (PK)
+  --
+  # box id (FK)
+  # game_config id (FK)
+  name: String
+  order: Number
+}
+
+entity GameConfig  {
+  + id (PK)
+  --
+  config_type: String
+  game_name: String
+  title: String
+  --
+  DoubleDiceBoardConfig
+  double_dice_board_min_round: Number
+  --
+  WrittenWishesConfig
+  wishes_amount: Number
+}
+
+entity WhoIsCard {
+  + id (PK)
+  --
+  text: String
+}
+
+entity TrueOrFalseTile {
+  + id (PK)
+  --
+  text: String
+}
+
+entity DoubleDiceBoardTile {
+  + id (PK)
+  --
+  text: String
+}
+
+
+Box ||-down-{ Phase
+
+Phase ||-down-|| GameConfig
+
+GameConfig }|-down-|{ WhoIsCard
+GameConfig }|-down-|{ TrueOrFalseTile
+GameConfig }|-down-|{ DoubleDiceBoardTile
+
+@enduml

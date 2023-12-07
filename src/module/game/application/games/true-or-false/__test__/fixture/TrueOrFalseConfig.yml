@@ -1,0 +1,28 @@
+entity: TrueOrFalseConfig
+items:
+  trueOrfalseConfig0:
+    configType: 'TrueOrFalseConfig'
+    gameName: 'True or false'
+    title: 'True or false test'
+    phase: '@phase0'
+    trueOrFalseTiles:
+      - '@trueOrFalseTile0'
+      - '@trueOrFalseTile1'
+      - '@trueOrFalseTile2'
+      - '@trueOrFalseTile3'
+      - '@trueOrFalseTile4'
+      - '@trueOrFalseTile5'
+      - '@trueOrFalseTile6'
+      - '@trueOrFalseTile7'
+      - '@trueOrFalseTile8'
+      - '@trueOrFalseTile9'
+      - '@trueOrFalseTile10'
+      - '@trueOrFalseTile11'
+      - '@trueOrFalseTile12'
+      - '@trueOrFalseTile13'
+      - '@trueOrFalseTile14'
+      - '@trueOrFalseTile15'
+      - '@trueOrFalseTile16'
+      - '@trueOrFalseTile17'
+      - '@trueOrFalseTile18'
+      - '@trueOrFalseTile19'

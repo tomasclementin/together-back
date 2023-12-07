@@ -1,0 +1,7 @@
+entity: WhoIsCard
+items:
+  whoIsCard0:
+    text: 'card text 1'
+
+  whoIsCard1:
+    text: 'card text 2'

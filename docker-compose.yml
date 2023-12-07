@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  cognito-local:
+    container_name: cognito-local
+    image: jagregory/cognito-local:latest
+    ports:
+      - 9229:9229
+    volumes:       
+      - .cognito:/app/.cognito
+  
+  db:
+    image: mysql:8.0
+    cap_add:
+      - SYS_NICE    
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./data/mysql/:/var/lib/mysql    
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost:3306"]
+        interval: 30s
+        timeout: 10s
+        retries: 5  

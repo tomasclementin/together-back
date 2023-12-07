@@ -1,0 +1,64 @@
+entity: TrueOrFalseTile
+items:
+  trueOrFalseTile0:
+    text: 'tile text 1'
+
+  trueOrFalseTile1:
+    text: 'tile text 2'
+  
+  trueOrFalseTile2:
+    text: 'tile text 3'
+  
+  trueOrFalseTile3:
+    text: 'tile text 4'
+
+  trueOrFalseTile4:
+    text: 'tile text 5'
+
+  trueOrFalseTile5:
+    text: 'tile text 6'
+
+  trueOrFalseTile6:
+    text: 'tile text 7'
+
+  trueOrFalseTile7:
+    text: 'tile text 8'
+
+  trueOrFalseTile8:
+    text: 'tile text 9'
+
+  trueOrFalseTile9:
+    text: 'tile text 10'
+
+  trueOrFalseTile10:
+    text: 'tile text 11'
+  
+  trueOrFalseTile11:
+    text: 'tile text 12'
+
+  trueOrFalseTile12:
+    text: 'tile text 13'
+  
+  trueOrFalseTile13:
+    text: 'tile text 14'
+  
+  trueOrFalseTile14:
+    text: 'tile text 15'
+
+  trueOrFalseTile15:
+    text: 'tile text 16'
+
+  trueOrFalseTile16:
+    text: 'tile text 17'
+  
+  trueOrFalseTile17:
+    text: 'tile text 18'
+  
+  trueOrFalseTile18:
+    text: 'tile text 19'
+  
+  trueOrFalseTile19:
+    text: 'tile text 20'
+  
+
+

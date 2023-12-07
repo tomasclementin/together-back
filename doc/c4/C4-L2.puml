@@ -1,0 +1,32 @@
+@startuml C4_Elements
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+System_Boundary(coreApi,'Core API'){
+  Container(auth,'Auth module','Handles user authentication')
+  Container(box,'Box module', 'handles boxes')
+  Container(phase,'Phase module', 'handles phases in boxes')
+  Container(gameConfig,'GameConfig module', 'Handles game configs')
+  Container(lobby,'Lobby module','Handles lobbies and lobby events')
+  Container(game,'Game module','Builds and loads selected games')
+  Container(user,'User module', 'Handles users')
+}
+Person(client, "User", "Authenticated user")
+Person_Ext(guest, "Guest User", "Guest invited by authenticated user")
+Person(admin, "Admin user", "Content creator")
+Container(adminWebApp, "Admin UI",'Svelte, Typescript', "Frontend application for generating content")
+Container(webApp, "UI","Svelte, Typescript", "Frontend application, main client.")
+ContainerDb_Ext(db,'Relational Database (AWS RDS)','MySql','Stores users and boxes related data')
+System_Ext(aws, "AWS Cognito", "User authorization and authentication")
+
+
+
+Rel(client, webApp, "Invites people to play games")
+Rel(guest, webApp, "Plays games")
+Rel(admin, adminWebApp, "Creates games and boxes")
+Rel(webApp, coreApi, "Retrieves boxes and creates lobbies")
+Rel(adminWebApp, coreApi, "Retrieves/sends games and boxes data")
+Rel(auth, aws, "Authenticate users")
+Rel(box, db, "Retrieves/sends boxes data")
+Rel(user, db, "Retrieves/sends users data")
+Rel(gameConfig, db, "Retrieves/sends game config data")
+Rel(phase, db, "Retrieves/sends phase data")
+@enduml
